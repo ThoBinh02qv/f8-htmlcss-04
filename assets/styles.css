@@ -153,7 +153,6 @@ a {
 }
 
 .cats {
-<<<<<<< HEAD
   width: 388px;
   height: 488px;
   border-radius: 16px;
@@ -176,27 +175,6 @@ a {
   z-index: 2;
   padding: 24px 3px 0 3px;
   background: #faa7ad;
-=======
-    width: 388px;
-    height: 488px;
-    border-radius: 16px;
-    object-fit: cover;
-    border: 2px solid #fff;
-    position: relative;
-    z-index: 2;
-}
-
-.dogs {
-    width: 186px;
-    height: 244px;
-    border-radius: 16px;
-    object-fit: cover;
-    position: absolute;
-    top: 302px;
-    left: 365px;
-    border: 2px solid #fff;
-    z-index: 2;
->>>>>>> e7e93f881f05e12b0c0088dc1a45b5d1d86ef997
 }
 
 .decor-01 {
@@ -296,17 +274,8 @@ a {
     line-height: 1.15; /* 115.152% */
 }
 
-<<<<<<< HEAD
 .hero__desc {
   margin-top: 24px;
-=======
-.section-desc {
-    margin-top: 24px;
-    color: #656689;
-    font-weight: 400;
-    line-height: 1.875; /* 187.5% */
-    width: 391px;
->>>>>>> e7e93f881f05e12b0c0088dc1a45b5d1d86ef997
 }
 
 .hero-link-btn {
