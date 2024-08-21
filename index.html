@@ -1,304 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- RESET CSS -->
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <!-- STYLES CSS -->
-    <link rel="stylesheet" href="./assets/styles.css" />
-    <!-- fonts poppins , Sora -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sora:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./assets/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./assets/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./assets/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./assets/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./assets/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./assets/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./assets/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./assets/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./assets/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="./assets/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./assets/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="./assets/favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <title>Lucky-Pet-Care</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <div class="logo">
-            <figure>
-              <img src="./assets/img/Logo.png" alt="Lucy" />
-            </figure>
-          </div>
-          <div class="header__nav">
-            <ul>
-              <li><a href="#!" class="nav__link">Home</a></li>
-              <li><a href="#!" class="nav__link">About</a></li>
-              <li><a href="#!" class="nav__link">Services & Rates</a></li>
-              <li><a href="#!" class="nav__link">Reviewa</a></li>
-              <li><a href="#!" class="nav__link">Contacts us</a></li>
-            </ul>
-          </div>
-          <a href="#!" class="signup"
-            ><span class="signup-btn">Sign up</span></a
-          >
-        </div>
-      </div>
-    </header>
-
-    <section class="hero">
-      <div class="container">
-        <section class="hero__inner">
-          <div class="hero__media">
-            <div class="hero__media__inner">
-              <figure class="hero-img-cats">
-                <img src="./assets/img/cats.png" alt="" class="cats" />
-                <img src="./assets/icon/decor.png" alt="" class="decor-01" />
-                <img src="./assets/icon/decor-02.png" alt="" class="decor-02" />
-              </figure>
-
-              <figure class="hero-img-dogs">
-                <img src="./assets/img/dogs.png" alt="" class="dogs" />
-              </figure>
-              <div class="hero__img-block">
-                <div class="hero__img-row">
-                  <figure>
-                    <img
-                      src="./assets/img/pet1.png"
-                      alt=""
-                      class="img-pet1 img-pets"
-                    />
-                  </figure>
-                  <div class="text-column">
-                    <strong class="text">Pet Health</strong>
-                    <span class="line-long"></span>
-                    <span class="line-short"></span>
-                  </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- RESET CSS -->
+        <link rel="stylesheet" href="./assets/reset.css" />
+        <!-- STYLES CSS -->
+        <link rel="stylesheet" href="./assets/styles.css" />
+        <!-- fonts poppins , Sora -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sora:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <title>Lucky-Pet-Care</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <figure>
+                            <img src="./assets/img/Logo.png" alt="Lucy" />
+                        </figure>
+                    </div>
+                    <div class="header__nav">
+                        <ul>
+                            <li><a href="#!" class="nav__link">Home</a></li>
+                            <li><a href="#!" class="nav__link">About</a></li>
+                            <li>
+                                <a href="#!" class="nav__link"
+                                    >Services & Rates</a
+                                >
+                            </li>
+                            <li><a href="#!" class="nav__link">Reviewa</a></li>
+                            <li>
+                                <a href="#!" class="nav__link">Contacts us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#!" class="signup"
+                        ><span class="signup-btn">Sign up</span></a
+                    >
                 </div>
+            </div>
+        </header>
 
-                <div class="hero__img-row">
-                  <figure>
-                    <img
-                      src="./assets/img/pet2.png"
-                      alt=""
-                      class="img-pet2 img-pets"
-                    />
-                  </figure>
-                  <div class="text-column">
-                    <strong class="text">Pet care</strong>
-                    <span class="line-long"></span>
-                    <span class="line-short"></span>
-                  </div>
+        <section class="hero">
+            <div class="container">
+                <section class="hero__inner">
+                    <div class="hero__media">
+                        <div class="hero__media__inner">
+                            <figure class="hero-img-cats">
+                                <img
+                                    src="./assets/img/cats.png"
+                                    alt=""
+                                    class="cats"
+                                />
+                                <img
+                                    src="./assets/icon/decor.png"
+                                    alt=""
+                                    class="decor-01"
+                                />
+                                <img
+                                    src="./assets/icon/decor-02.png"
+                                    alt=""
+                                    class="decor-02"
+                                />
+                            </figure>
+
+                            <figure class="hero-img-dogs">
+                                <img
+                                    src="./assets/img/dogs.png"
+                                    alt=""
+                                    class="dogs"
+                                />
+                            </figure>
+                            <div class="hero__img-block">
+                                <div class="hero__img-row">
+                                    <figure>
+                                        <img
+                                            src="./assets/img/pet1.png"
+                                            alt=""
+                                            class="img-pet1 img-pets"
+                                        />
+                                    </figure>
+                                    <div class="text-column">
+                                        <strong class="text">Pet Health</strong>
+                                        <span class="line-long"></span>
+                                        <span class="line-short"></span>
+                                    </div>
+                                </div>
+
+                                <div class="hero__img-row">
+                                    <figure>
+                                        <img
+                                            src="./assets/img/pet2.png"
+                                            alt=""
+                                            class="img-pet2 img-pets"
+                                        />
+                                    </figure>
+                                    <div class="text-column">
+                                        <strong class="text">Pet care</strong>
+                                        <span class="line-long"></span>
+                                        <span class="line-short"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="hero__content">
+                        <h1 class="hero__heading">
+                            Established & Trusted Pet Care Service
+                        </h1>
+                        <p class="section-desc hero__desc">
+                            Discover a wide variety of Pawsitive services to
+                            choose from, including daycare, private walks,
+                            office duty and spa.
+                        </p>
+                        <div class="hero__link">
+                            <a href="#!" class="hero-link-btn"
+                                >Book a Meet
+                                <span class="hero-icon-btn">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="5"
+                                        height="6"
+                                        viewBox="0 0 5 6"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M1.48584 0.5L3.98584 3L1.48584 5.5"
+                                            stroke="#FD5056"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+
+                            <a href="" class="hero-link">Schedule a Call</a>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <!-- About -->
+
+        <main style="height: 10000px">
+            <div class="about">
+                <div class="container">
+                    <section class="about__inner">
+                        <section class="about__content">
+                            <p class="desc-title">// About //</p>
+                            <h2 class="section-heading about__heading">
+                                Best Agency For Your Pet.
+                            </h2>
+                            <p class="section-desc about__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <div class="about__checklist">
+                                <span class="about__check-item"
+                                    >Certified Groomer</span
+                                >
+                                <span class="about__check-item"
+                                    >Animal Lover</span
+                                >
+                                <span class="about__check-item"
+                                    >14+ Years Experience</span
+                                >
+                                <span class="about__check-item"
+                                    >Pet Parent Of 3 Dogs</span
+                                >
+                            </div>
+                        </section>
+                        <div class="about__media">
+                            <figure class="about__images">
+                                <img
+                                    src="./assets/img/about-img.png"
+                                    alt="about-img"
+                                    class="about__img"
+                                />
+                                <img
+                                    src="./assets/icon/decor-about.svg"
+                                    alt="decor-about"
+                                    class="decor-about"
+                                />
+                            </figure>
+                            <div class="about__media-block">
+                                <div class="about__block-inner">
+                                    <img
+                                        src="./assets/icon/icon-pets.svg"
+                                        alt=""
+                                        class="icon__pets"
+                                    />
+                                    <strong class="about__strong">20+</strong>
+                                    <p class="about__desc-block">
+                                        Years Experience
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Vacation -->
+                    <section class="about__inner about__validation">
+                        <div class="about__media">
+                            <figure class="about__image-dogs">
+                                <img
+                                    src="./assets/img/about-img2.png"
+                                    alt="about-img2"
+                                    class="about-img2"
+                                />
+                            </figure>
+                        </div>
+                        <section class="about-content">
+                            <h2 class="section-title about__heading">
+                                Taking A Vacation? So Is Your Pet.
+                            </h2>
+                            <p class="section-desc about__desc">
+                                We offer long-term and short-term boarding.
+                                Every dog has its own private, spacious room and
+                                daily individual time in our large play yard.
+                            </p>
+                            <div class="about__row-category">
+                                <div class="about_row-cte-item">
+                                    <img
+                                        src="./assets/icon/home.svg"
+                                        alt="home"
+                                        class="about-cte-icon"
+                                    />
+                                    <span class="cte-title">Pet Boarding</span>
+                                </div>
+                                <div class="about_row-cte-item">
+                                    <img
+                                        src="./assets/icon/petdaycare.svg"
+                                        alt="petdaycare"
+                                        class="about-cte-icon"
+                                    />
+                                    <span class="cte-title">Pet Daycare</span>
+                                </div>
+                                <div class="about_row-cte-item">
+                                    <img
+                                        src="./assets/icon/pettransport.svg"
+                                        alt="pettransport"
+                                        class="about-cte-icon"
+                                    />
+                                    <span class="cte-title">Pet Transport</span>
+                                </div>
+                            </div>
+                            <p class="section-sub-desc valication__desc">
+                                While you're on holiday, here's where your furry
+                                friends will spend their time.
+                            </p>
+                            <a href="#!" class="validation__link">View more</a>
+                        </section>
+                    </section>
                 </div>
-              </div>
-            </div>
-          </div>
-          <section class="hero__content">
-            <h1 class="hero__heading">
-              Established & Trusted Pet Care Service
-            </h1>
-            <p class="section-desc hero__desc">
-              Discover a wide variety of Pawsitive services to choose from,
-              including daycare, private walks, office duty and spa.
-            </p>
-            <div class="hero__link">
-              <a href="#!" class="hero-link-btn"
-                >Book a Meet
-                <span class="hero-icon-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="5"
-                    height="6"
-                    viewBox="0 0 5 6"
-                    fill="none"
-                  >
-                    <path
-                      d="M1.48584 0.5L3.98584 3L1.48584 5.5"
-                      stroke="#FD5056"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-              </a>
-
-              <a href="" class="hero-link">Schedule a Call</a>
-            </div>
-          </section>
-        </section>
-      </div>
-    </section>
-
-    <!-- About -->
-
-    <div class="about">
-      <div class="container">
-        <section class="about__inner">
-          <section class="about__content">
-            <p class="desc__title">// About //</p>
-            <h2 class="section-title about__heading">
-              Best Agency For Your Pet.
-            </h2>
-            <p class="section-desc about__desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="about__checklist">
-              <span class="about__check-item">Certified Groomer</span>
-              <span class="about__check-item">Animal Lover</span>
-              <span class="about__check-item">14+ Years Experience</span>
-              <span class="about__check-item">Pet Parent Of 3 Dogs</span>
-            </div>
-          </section>
-          <div class="about__media">
-            <figure class="about__images">
-              <img
-                src="./assets/img/about-img.png"
-                alt="about-img"
-                class="about__img"
-              />
-              <img
-                src="./assets/icon/decor-about.svg"
-                alt="decor-about"
-                class="decor-about"
-              />
-            </figure>
-            <div class="about__media-block">
-              <div class="about__block-inner">
-                <img
-                  src="./assets/icon/icon-pets.svg"
-                  alt=""
-                  class="icon__pets"
-                />
-                <strong class="about__strong">20+</strong>
-                <p class="about__desc-block">Years Experience</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Vacation -->
-
-        <section class="about__inner about__validation">
-          <div class="about__media">
-            <figure class="about__image-dogs">
-              <img
-                src="./assets/img/about-img2.png"
-                alt="about-img2"
-                class="about-img2"
-              />
-            </figure>
-          </div>
-
-          <section class="about-content">
-            <h2 class="section-title about__heading">
-              Taking A Vacation? So Is Your Pet.
-            </h2>
-            <p class="section-desc about__desc">
-              We offer long-term and short-term boarding. Every dog has its own
-              private, spacious room and daily individual time in our large play
-              yard.
-            </p>
-
-            <div class="about__row-category">
-              <div class="about_row-cte-item">
-                <img src="./assets/icon/home.svg" alt="home" class="about-cte-icon" />
-                <span class="cte-title">Pet Boarding</span>
-              </div>
-
-              <div class="about_row-cte-item">
-                <img src="./assets/icon/petdaycare.svg" alt="petdaycare" class="about-cte-icon" />
-                <span class="cte-title">Pet Daycare</span>
-              </div>
-
-              <div class="about_row-cte-item">
-                <img src="./assets/icon/pettransport.svg" alt="pettransport" class="about-cte-icon" />
-                <span class="cte-title">Pet Transport</span>
-              </div>
             </div>
 
-            <p class="section-sub-desc valication__desc">
-              While you're on holiday, here's where your furry friends will
-              spend their time.
-            </p>
+            <!-- Our Services -->
+            <section class="services">
+                <div class="container">
+                    <p class="desc-title services__desc-title">What we do for you?</p>
+                    <h2 class="section-heading services__heading">Our Services</h2>
 
-            <a href="#!" class="validation__link">View more</a>
-          </section>
-        </section>
-      </div>
-    </div>
-  </body>
+                    <div class="services-category">
+                      <!--  services__cte-left -->
+                        <div class="services__cte-list services__cte-left">
+                            <!-- services item1 -->
+
+                            <section class="services__cte-item">
+                                <h3 class="services__cte-heading section-sub-heading">Puppy Sitting</h3>
+                                <p class="section-sub-desc services__desc">Helping your new pup to be a good boy or girl isn’t always easy, but we’re here to help.</p>
+                                <div class="services-row-link">
+                                    <a href="#!" class="service__link">Read More</a>
+                                    <svg
+                                        class="services__arrow"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M3 9L9 3"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M4.125 3H9V7.875"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </section>
+                            <!-- services item2 -->
+
+                            <section class="services__cte-item">
+                                <h3 class="services__cte-heading section-sub-heading">Dog Walking</h3>
+                                <p class="section-sub-desc services__desc">Choose from a 30, 45, or 60-minute visit to give your pet their daily dose of fun-filled.</p>
+                                <div class="services-row-link">
+                                    <a href="#!" class="service__link">Read More</a>
+                                    <svg
+                                        class="services__arrow"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M3 9L9 3"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M4.125 3H9V7.875"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </section>
+
+                            <!-- services item3 -->
+
+                            <section class="services__cte-item">
+                                <h3 class="services__cte-heading section-sub-heading">Pet Sitting</h3>
+                                <p class="section-sub-desc services__desc ">While you’re away we can make sure your pet has all the food, water, exercise, and, of course.</p>
+                                <div class="services-row-link">
+                                    <a href="#!" class="service__link">Read More</a>
+                                    <svg
+                                        class="services__arrow"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 12 12"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M3 9L9 3"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M4.125 3H9V7.875"
+                                            stroke="#FF5B2E"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-- services - media -->
+                        <div class="services__media">
+                          <figure class="services__images">
+                            <img src="./assets/img/services_img.png" alt="" class="services_img">
+                          </figure>
+                          <a href="#!" class="btn services__btn">View All Services</a>
+                        </div>
+                      <!-- services__cte-right -->
+                        <div class="services__cte-list services__cte-right">
+                          <!-- services item1 -->
+
+                          <section class="services__cte-item">
+                              <h3 class="services__cte-heading section-sub-heading">Overnight Care</h3>
+                              <p class="section-sub-desc services__desc">If you’re away for the night, we can stay the night or stop by in the evening and morning.</p>
+                              <div class="services-row-link">
+                                  <a href="#!" class="service__link">Read More</a>
+                                  <svg
+                                      class="services__arrow"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="12"
+                                      height="12"
+                                      viewBox="0 0 12 12"
+                                      fill="none"
+                                  >
+                                      <path
+                                          d="M3 9L9 3"
+                                          stroke="#FF5B2E"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                      />
+                                      <path
+                                          d="M4.125 3H9V7.875"
+                                          stroke="#FF5B2E"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                      />
+                                  </svg>
+                              </div>
+                          </section>
+                          <!-- services item2 -->
+
+                          <section class="services__cte-item">
+                              <h3 class="services__cte-heading section-sub-heading">Pet Taxi</h3>
+                              <p class="section-sub-desc services__desc">Does your pet need a lift to the groomers, vet, or dog park? We’ve got their tail covered.</p>
+                              <div class="services-row-link">
+                                  <a href="#!" class="service__link">Read More</a>
+                                  <svg
+                                      class="services__arrow"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="12"
+                                      height="12"
+                                      viewBox="0 0 12 12"
+                                      fill="none"
+                                  >
+                                      <path
+                                          d="M3 9L9 3"
+                                          stroke="#FF5B2E"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                      />
+                                      <path
+                                          d="M4.125 3H9V7.875"
+                                          stroke="#FF5B2E"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                      />
+                                  </svg>
+                              </div>
+                          </section>
+
+                          <!-- services item3 -->
+
+                          <section class="services__cte-item">
+                              <h3 class="services__cte-heading section-sub-heading">Pet Medical Admin</h3>
+                              <p class="section-sub-desc services__desc">Our team of experienced professionals can help with everything from pills to injections.</p>
+                              <div class="services-row-link">
+                                  <a href="#!" class="service__link">Read More</a>
+                                  <svg
+                                      class="services__arrow"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="12"
+                                      height="12"
+                                      viewBox="0 0 12 12"
+                                      fill="none"
+                                  >
+                                      <path
+                                          d="M3 9L9 3"
+                                          stroke="#FF5B2E"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                      />
+                                      <path
+                                          d="M4.125 3H9V7.875"
+                                          stroke="#FF5B2E"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                      />
+                                  </svg>
+                              </div>
+                          </section>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
